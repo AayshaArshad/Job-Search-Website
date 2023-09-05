@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #1f034b;
+    float: left;
+}
+
+.sidebar ul {
+    letter-spacing: 1.5px;
+    margin-top: 10rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 25px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.sidebar li a:hover {
+    background-color: #ddd;
+    text-transform: uppercase;
+    transition: 0.2s;
+    letter-spacing: 4px;
+    color: #1f034b;
+}
+
+.header {
+    background-color: #ebf7d8;
+    color: #1f034b;
+    padding: 40px;
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+.main {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.content {
+    display: none;
+}
+
+.content.show {
+    display: block;
+}
+
+.CA-dashboard-logo>a {
+    color: #fff;
+    font-size: 25px;
+
+}
+
+.personal-info-title {
+
+    font-size: 30px;
+    color: #390a92;
+}
+
+/*personalinfo output Dashboard*/
+#No-Results-Found {
+    font-size: 18px;
+    color: #1f034b;
+    padding-top: 15rem;
+    padding-left: 50rem;
+}
+
+#personalInfo-Table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #1d1c1c;
+
+}
+
+th {
+    background-color: #1f034b;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #1f034b;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Add job paert*/
+.addJob-title {
+    font-size: 300px;
+    color: #390a92;
+}
+
+/*VIEW OR MAKES CHANGES TO JOBS*/
+.div3-title {
+    font-size: 300px;
+    color: #390a92;
+}
+
+#btnLogout {
+    background-color: #1f034b;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20rem;
+    margin-left: 50rem;
+}
+
+.div {
+    font-size: 30px;
+    color: #390a92;
+    cursor: pointer;
+}
+.div:hover{
+    
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+/*User personal info*/
+.feedback-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lbl {
+    display: block;
+    margin-bottom: 10px;
+
+    color: #390a92;
+    font-size: 2rem;
+
+}
+
+#userName {
+    width: 40px;
+    border-radius: 2rem;
+}
+
+.container {
+    max-width: 400px;
+    color: #390a92;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input[type="text"],
+textarea {
+    font-size: 12px;
+    color: #390a92;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #1f034b;
+}
+
+.button-feedback {
+    padding: 10px 20px;
+    color: #390a92;
+    color: white;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+
+
+}
+
+.containerbtn {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1f034b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 7rem;
+    margin-left: 14rem;
+    font-size: 15px;
+}
+
+.add-job {
+    width: 400px;
+    margin-left: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    background: transparent;
+}
+
+.adjb {
+    display: block;
+    margin-top: 10px;
+    font-size: 25px;
+    color: #390a92;
+}
+
+#title {
+    width: 350px;
+    padding: 5px;
+    margin-top: 5px;
+    color: #1f034b;
+}
+.title1 {
+    width: 350px;
+    padding: 5px;
+    margin-top: 5px;
+    color: #1f034b;
+}
+
+.title-select {
+    width: 400px;
+    padding: 5px;
+    margin-top: 5px;
+    color: #1f034b;
+    border: 2px;
+}
+
+.title-select>option {
+    height: 200px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #1f034b;
+}
+
+#description {
+    resize: vertical;
+}
+
+.add-job-button {
+    background-color: #1f034b;
+    color: #fff;
+    font-size: 15px;
+    size: 4rem;
+    margin-left: 10px;
+    margin-top: 1rem;
+}
+#dlt{
+    color:#160138;
+    font-size: 15px;
+}
+#dlt:hover{
+   color: #1f034b;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-size: cover;
+    background-color: #fff;
+  
+
+}
+
+#update-job{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+}
+#updateJob-Table{
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+
+}
+#update{
+    color: #1f034b;
+   
+    font-size: 13px;
+    margin-left: 28rem;
+   
+}
+#update:hover{
+    color: #1f034b;
+    font-size: 20px;
+    transition: 0.2s;
+    text-transform:uppercase;
+    background-size: 30px;
+}
+#updateForm{
+    width: 20rem;
+    align-items: center;
+}
+.webadminLable{
+    display: block;
+    margin-top: 10px;
+    font-size: 95px;
+    color: #390a92;
+}
+
+#name{
+    width: 20px;
+}
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #1f034b;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+.notificationForm {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+.notificationForm-textarea {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+  }
+  
+input[type="submit"] {
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1f034b;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+ input[type="submit"]:hover {
+    background-color: #160138;
+    text-transform: uppercase;
+  }
+#updateBtn{
+    margin-left: 80rem;
+}

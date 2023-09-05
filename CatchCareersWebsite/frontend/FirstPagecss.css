@@ -1,0 +1,599 @@
+:root {
+    --primaryColor: #0076de;
+    --whiteColor: #fff;
+    --blackColor: #333;
+    --greyColor: #f6f8fa;
+    --lableColor: #64b1f5;
+    --yellowColor: #ffd723;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("images/FirstPage.avif");
+    background-size: cover;
+
+
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 2.5rem;
+    z-index: 5;
+    color: var(--whiteColor);
+    background: transparent;
+
+
+}
+
+.navbar-logo>a {
+    letter-spacing: 0.5;
+    text-decoration: none;
+    color: var(--whitecolor);
+}
+
+.navbar-menu {
+    width: 400px;
+    display: flex;
+}
+
+.menu-toggler {
+    display: none;
+}
+
+.menu-toggler .bar {
+    width: 15px;
+    height: 2px;
+    margin: 3px auto;
+    transition: all 0.3 ease-in-out;
+    background-color: var(--whiteColor);
+    cursor: pointer;
+
+}
+
+h1 {
+    position: relative;
+    font-size: 5vw;
+    color: white;
+    top: 5rem;
+    padding: 1rem 2.5rem;
+}
+
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 650px;
+    color: #390a92;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px #390a92);
+}
+
+@keyframes animate {
+
+    0%,
+    10% {
+        width: 0;
+    }
+
+}
+
+.navbar-menu {
+    position: relative;
+    top: -10px;
+    left: 200px;
+}
+
+.buttonLogin {
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition-duration: 0.4s;
+    width: 8rem;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.buttonLogin:hover {
+    background-color: #390a92;
+    color: #fff;
+}
+
+.buttonSignUp {
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition-duration: 0.4s;
+    width: 8rem;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.buttonSignUp:hover {
+    background-color: #390a92;
+    color: #fff;
+}
+
+
+
+#LogAsWebAdmin {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+
+}
+
+.loginBox {
+    position: relative;
+    width: 410px;
+    height: 450px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+    top:-12em;
+    display: none;
+
+}
+
+.login {
+    font-size: 3em;
+    margin-top: 1em;
+    color: #390a92;
+    font-weight: 500;
+}
+
+.inputBox {
+    position: relative;
+    width: 300px;
+    margin: 30px 0;
+    border-bottom: 2px solid #390a92;
+    display: block;
+}
+
+.inputBox label {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    font-size: 15px;
+    transform: translate(-49%);
+    color: #390a92;
+    pointer-events: none;
+    transition: .9s;
+}
+
+.inputBox input:focus~label,
+.inputBox input:valid~label {
+    top: -5px;
+}
+
+.inputBox input {
+    width: 100% transparent;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: #390a92;
+    padding: 5x;
+}
+
+.icon {
+    position: absolute;
+    right: 8px;
+    color:#390a92;
+    font-size: 2 em;
+    line-height: 42px;
+}
+
+.Login {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #390a92;
+    font-weight: 500;
+}
+
+.register {
+    font-size: .9em;
+    color: #390a92;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    color: #390a92;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:360px) {
+    .loginBox {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+}
+
+.LogInContainer {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+
+}
+.btnClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #390a92;
+    font-size: 2em;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background:transparent;
+    box-shadow: 0px 8px 16px 0px (0,0,0,0.2);
+    z-index: 1;
+    border-radius: 16px;
+    min-width: 150px;
+    height: 155px;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, .5);
+
+   
+}
+.dropdown a{
+    color:  #fff;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+   
+}
+.dropdown a:hover{
+    background-color: #0c0246;
+}
+.show{
+    display: block;
+}
+.rgstr{
+    font-weight: 700;
+    font-size: 1em;
+    padding-top: 1em;
+}
+.registerBoxCA{
+    position: relative;
+    width: 460px;
+    height: 700px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+    top: -20em;
+    display: none;
+}
+.RegisterCA{
+    font-size: 3em;
+    margin-top: 1em;
+    color: #390a92;
+    font-weight: 500;
+    
+}
+.set{
+    position: relative;
+    width: 300px;
+    margin: 30px 0;
+    border-bottom: 2px solid #390a92;
+    display: block;
+}
+.set label{
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    font-size: 15px;
+    transform: translate(-49%);
+    color: #390a92;
+    pointer-events: none;
+    transition: .9s;
+}
+.set input:focus~label,
+.set input:valid~label {
+    top: -5px;
+}
+.set input{
+    width: 100% transparent;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: #390a92;
+    padding: 5x;
+}
+.btnCloseCA{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #390a92;
+    font-size: 2em;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+}
+/*
+ left: 100px;
+ position: relative;
+*/
+.iconCA {
+    position: absolute;
+    right: 4rem;
+    color:#390a92;
+    font-size: 2 em;
+    line-height: 42px;
+}
+.reset{
+    width: 80%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #390a92;
+    font-weight: 500;
+}
+.create{
+    width: 80%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #390a92;
+    font-weight: 500;
+}
+.lgIn{
+    font-size: .9em;
+    color: #390a92;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.lgIn p a {
+    color: #390a92;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.lgIn p a:hover {
+    text-decoration: underline;
+}
+.registerBoxUser{
+    position: relative;
+    width: 460px;
+    height: 1000px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+    top: -20em;
+    display: none;
+}
+.RegisterUser{
+    font-size: 3em;
+    margin-top: 1em;
+    color: #390a92;
+    font-weight: 500;
+}
+.setUser{
+    position: relative;
+    width: 300px;
+    margin: 30px 0;
+    border-bottom: 2px solid #390a92;
+    display: block;
+}
+.setUser label{
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    font-size: 15px;
+    transform: translate(-49%);
+    color: #390a92;
+    pointer-events: none;
+    transition: .9s;
+}
+.setUser input:focus~label,
+.setUser input:valid~label {
+    top: -5px;
+}
+.setUser input{
+    width: 100% transparent;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: #390a92;
+    padding: 5x;
+}
+#jobType{
+    width:300px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #390a92;
+    border-radius: 4px;
+    background-color: #390a92;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.btnCloseUser{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #390a92;
+    font-size: 2em;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+    overflow: hidden;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.iconUser{
+    position: absolute;
+    right: 1.5rem;
+    color:#390a92;
+    font-size: 2 em;
+    line-height: 42px;
+}
+.resetUser{
+    width: 80%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #390a92;
+    font-weight: 500;
+}
+.createUser{
+    width: 80%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #390a92;
+    font-weight: 500;
+}
+.lgInUser{
+    font-size: .9em;
+    color: #390a92;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.lgInUser p a {
+    color: #390a92;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.lgInUser p a:hover {
+    text-decoration: underline;
+
+    font-size: .9em;
+    color: #390a92;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.lgIn p a {
+    color: #390a92;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.lgIn p a:hover {
+    text-decoration: underline;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .RUser label{
+    color: #390a92;
+  }
+  #error{
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
